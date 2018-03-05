@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald';
+  color: white;
+  text-transform: uppercase;
+  background: url('https://i.imgur.com/Vf6dSDb.jpg') no-repeat /* center center */ fixed;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+
+}
+
+header {
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.hLogo {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.qAndP {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  margin-right: 20px;
+}
+
+main {
+  margin-top: 100px;
+}
+/* -------------------------------------------- Starting Quiz ------------------------------------------ */
+
+.quizBox {
+ /* box-sizing: border-box; */
+  border: 2px solid #53c0cc; 
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px; 
+  text-align: center;
+} 
+
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  background-color: #07616c;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+
+
+label {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    width: 60%;
+    font-size: 2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    line-height: 20px;
+    color: white;
+}
+
+label:hover, label:focus {
+    background-color: #467b8d;
+
+}
+fieldset {
+    border: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+input:checked {
+    border: 8px solid #ebe852;
+}
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.js-questionAnswerForm {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 2px solid #53c0cc;
+    font-size: 1em;
+}
+
+button {
+  padding: 20px;
+  background-color: #07616c;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer; 
+  display: block;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button:hover, button:focus {
+    background-color: #ffd95c;
+    color: white;
+}
+
+.correctFeedback {
+  text-align: center;
+}
+
+.icon img {
+  width: 20%;
+  border-radius: 30%;
+  background-color: #816C5B;
+  padding: 30px;
+}
+
+.resultpic {
+  width: 60%;
+}
+
+p {
+  font-size: 1.5em;
+}
+/* -------------------------------------------- Responsive Grid ------------------------------------------ */
+
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-3, .col-4, .col-6, .col-12 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+/* Mobile defaults */
+.col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+  /* 3 columns, 3/12 in % */
+  .col-3 {
+    width: 25%;
+  }
+
+  /* 4 columns, 4/12 in % */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* 6 columns 6/12 in % */
+  .col-6 {
+    width: 50%;
+  }
+
+  /* 12 columns, 12/12 */
+  .col-12 {
+    width: 100%;
+  }
+}
