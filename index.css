@@ -97,7 +97,6 @@ fieldset {
 input {
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
     border-radius: 50%;
     width: 16px;
     height: 16px;
@@ -129,7 +128,7 @@ input[type=radio] {
 button {
   padding: 20px;
   background-color: #07616c;
-  color: white;
+  color: grey;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
